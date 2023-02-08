@@ -30,6 +30,18 @@ function getWeather(latitude, longitude, cityname, currentWeatherData) {
     fetch(
         `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${currentWeatherApiKey}`
     )
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function (weatherForecast) {
+        renderCurrentForecast(cityName, weatherForecast, currentWeatherData);
+    });
 }
+
+function renderCurrentWeather(params) {
+    // need to creat todays weather //
+    // using a for loop to creat the desired results for 5 day forecast//
+}
+
 
 searchForm.addEventListener("click", citySearch)
