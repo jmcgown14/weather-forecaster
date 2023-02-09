@@ -43,5 +43,5 @@ function renderCurrentWeather(params) {
     // using a for loop to creat the desired results for 5 day forecast//
 }
 
-
+// local storage to save cities that you selected with a button
 searchForm.addEventListener("click", citySearch)
