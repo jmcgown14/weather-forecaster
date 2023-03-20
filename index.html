@@ -1,51 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecaster</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Assets/style.css" />
+  </head>
+
+  <body>
     <header>
-        <div class="header-contaner">
-            <h1>Weather Forecast</h1>
-        </div>
+      <div class="container">
+        <h1>Weather Dashboard</h1>
+      </div>
     </header>
 
     <main>
-        <div class="serach-form">
-            <h3>Search for your city</h3>
-            <form class="citySearch">
-                <input id="inputCity" type="text" class="formContorller" placeholder="City Name" class="city-search-append">
-                <button id="searchBtn" type="submit">Search</button>
-            </form>
+      <div class="search">
+        <h5>Search for City</h5>
+
+        <form class="inputGroup">
+          <input
+            id="searchItem"
+            type="text"
+            class="formController"
+            placeholder="City name"
+            class="input-group-append"
+          />
+          <button
+            id="searchBtn"
+            class="searchBtnPrimary"
+            type="submit"
+            id="buttonAddon"
+          >
+            Go!
+          </button>
+        </form>
+      <div id="button-container">
+        
+      </div>
+      </div>
+      <div class="weather">
+        <div class="current"></div>
+        <div class="forecast">
+          <div class="card">
+            <h3>Day</h3>
+            <p>Temp</p>
+            <p>Wind</p>
+            <p>Humidity</p>
+          </div>
+          <div class="card">
+            <h3>Day</h3>
+            <p>Temp</p>
+            <p>Wind</p>
+            <p>Humidity</p>
+          </div>
+          <div class="card">
+            <h3>Day</h3>
+            <p>Temp</p>
+            <p>Wind</p>
+            <p>Humidity</p>
+          </div>
+          <div class="card">
+            <h3>Day</h3>
+            <p>Temp</p>
+            <p>Wind</p>
+            <p>Humidity</p>
+          </div>
+          <div class="card">
+            <h3>Day</h3>
+            <p>Temp</p>
+            <p>Wind</p>
+            <p>Humidity</p>
+          </div>
         </div>
-        <article class="weather">
-            <div class="today-weather">
-                <p>today weather goes in here</p>
-            </div>
-            <div class="forecast-weather">
-                <p>For loop of generated content to fit in here?</p>
-            </div>
-
-        </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
+      </div>
     </main>
-    
-</body>
-<script src="./Assets/script.js"></script>
+    <script src="./Assets/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
