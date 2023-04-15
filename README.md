@@ -23,8 +23,12 @@ THEN I am again presented with current and future conditions for that city
 
 ## Mock-Up
 
-The following image shows the web application's appearance and functionality:
+[Github Repository](https://github.com/jmcgown14/weather-forecaster)
 
+[Deployed Sited]()
+
+The following image shows the web application's appearance and functionality:
+![Working site](./Weather.png)
 
 
 

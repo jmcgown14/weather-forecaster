@@ -69,6 +69,7 @@ function weatherData(searchTerm) {
 function getWeather(latitude, longitude, cityName, currentWeatherData) {
   console.log(latitude, longitude);
   fetch(
+    // api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
     `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${currentWeatherApiKey}&units=imperial`
   )
     .then(function (response) {
@@ -80,7 +81,7 @@ function getWeather(latitude, longitude, cityName, currentWeatherData) {
     });
 }
 
-function renderCurrentWeather(currentWeatherData) {
+function renderCurrentWeather(cityName, currentWeatherData) {
   var todayDate = dayjs().format("MM/DD/YYYY");
   console.log("current: ", currentWeatherData);
 
@@ -95,7 +96,6 @@ function renderCurrentWeather(currentWeatherData) {
                 <p>Humidity: ${currentWeatherData.main.humidity}%</p>
     `;
 }
-
 // Create function for forecastWeather
 const forecastDiv = document.getElementById("forecast");
 function renderForecastWeather(forecastWeather) {
